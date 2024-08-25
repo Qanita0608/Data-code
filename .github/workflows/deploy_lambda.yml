@@ -24,7 +24,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Create deployment package
-        run: zip -r function.zip Data-code.py
+        run: zip -r function.zip lambda_function.py
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v2
